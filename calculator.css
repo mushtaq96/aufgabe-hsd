@@ -1,0 +1,80 @@
+.calculator {
+    width: 300px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #7d6f6f;
+}
+
+.input-container {
+    display: flex;
+    justify-content: center;
+}
+
+input {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+    text-align: right;
+    padding-right: 20px;
+    font-size: 24px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.button-container button,
+.row button {
+    width: calc(20% - 10px);
+    height: 60px;
+    margin: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    border: 1px solid #333;
+}
+
+.button-container button {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.first-row button,
+.last-column button {
+    background-color: #ff6347; 
+}
+
+button:hover {
+    background-color: #ff9999; 
+}
+
+.large-plus-button {
+    width: 33%;
+    height: 80px;
+    font-size: 24px;
+}
+
+input[type="text"][disabled] {
+    background-color: #ffffff;
+    color: #666;
+}
+
+#onBtn, #clearBtn, #resetBtn, #lessBtn{
+    background-color: #ff6347;
+}
+#equals{
+    background-color: rgb(82, 216, 216);
+}
+#divideBtn, #minusBtn, #multiplyBtn, #largePlus, #closeBtn{
+    background-color: rgb(208, 129, 38);
+}
